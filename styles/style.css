@@ -4,20 +4,23 @@
 /* shared style */
 
 * {
-    font-family: 'Lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
 
 body {
 
-    /* margin: 0; */
+    margin: 0;
 }
 
 .btn-primary {
     padding: 15px 20px;
-    border-radius: 5px;
-    margin-bottom: 50px;
+    border-radius: 8px;
+    background: #ff900e;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
 }
 
 /* header style */
@@ -34,7 +37,7 @@ nav {
 }
 
 .nav-title {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 700;
     color: #131313;
 }
@@ -63,14 +66,45 @@ nav li a {
 }
 
 .banner-title {
-    font-size: 65px;
+    font-size: 5rem;
     font-weight: 700;
     color: #131313;
+  
 }
 
 .banner-description {
     color: #727272;
 }
 .banner-img{
-    margin: 0 auto;
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* Responsive media query */
+/* For Mobile devices */
+
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .banner-img{
+        width: 100%;
+    }
+}
+
+/* For tablets or medium devices */
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .banner-img{
+        width: 100%;
+    }
+    
 }
