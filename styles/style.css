@@ -143,7 +143,7 @@ main {
 }
 
 .features-content .card {
-    width: 580px;
+    width: 480px;
     height: 160px;
     padding: 30px;
     margin-bottom: 20px;
@@ -152,6 +152,31 @@ main {
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
 }
 
+.features-img img {
+    height: 90%;
+    margin-left: 50px;
+    margin-right: 0px;
+}
+
+.teen-year-badge {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 342px;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+    bottom: 100px;
+}
+
+.teen-year-badge h2 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.teen-year-experience {
+    font-size: 1.5rem;
+}
 
 
 /* facts style */
@@ -229,6 +254,20 @@ main {
     height: 30px;
 }
 
+/* footer style */
+footer {
+    
+    align-items: center;
+    border-radius: 8px;
+    background: #FFF4E7;
+    margin-bottom: 200px;
+}
+footer p{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #424242;
+    padding: 40px 400px;
+}
 
 
 /* Responsive media query */
@@ -241,14 +280,24 @@ main {
 
     nav,
     .teams-container,
+    .features,
     .facts-card-container,
-    .sponsors-img-container,
-    .features {
+    .sponsors-img-container {
         flex-direction: column;
     }
 
     .teams-container {
         margin: 0 auto;
+    }
+
+    .features-img img {
+        width: 90%;
+        margin-left: 0px;
+    }
+
+    .teen-year-badge {
+        max-width: 275px;
+        position: static;
     }
 
     .banner-img {
@@ -283,9 +332,9 @@ main {
 
     nav,
     .teams-container,
+    .features,
     .facts-card-container,
-    .sponsors-img-container,
-    .features {
+    .sponsors-img-container {
         flex-direction: column;
     }
 
